@@ -24,8 +24,8 @@
 
 	<aside id="admin-aside">
 		<ul class="side-nav">
-			<a href="#"><li class="active"><div><i data-feather="home" style="position: relative; top: 9px !important;"></i><span>Dashboard</span></div></li></a>
-			<a href="#"><li><i data-feather="book-open" style="position: relative; top: 9px !important;"></i><span>My Books</span></li></a>
+			<a href="{{route('admin.dashboard')}}"><li class="active"><div><i data-feather="home" style="position: relative; top: 9px !important;"></i><span>Dashboard</span></div></li></a>
+			<a href="{{route('admin.stories')}}"><li><i data-feather="book-open" style="position: relative; top: 9px !important;"></i><span>My Stories</span></li></a>
 			<a href="#"><li><i data-feather="tag" style="position: relative; top: 9px !important;"></i><span>Add Tag</span></li></a>
 			<a href="#"><li><i data-feather="slack" style="position: relative; top: 9px !important;"></i><span>Add Genre</span></li></a>
 			<a href="#"><li><i data-feather="users" style="position: relative; top: 9px !important;"></i><span>Users</span></li></a>
