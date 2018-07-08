@@ -1,0 +1,110 @@
+#carouselExampleIndicators {
+	height: 100vh;
+}
+
+.carousel-inner > div {
+	height: 662px !important;
+}
+
+
+
+.bg-light {
+    background-color: transparent !important;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+
+    img {
+    	width: 144px;
+    }
+
+    .nav-link:focus {
+    	color: #fff !important;
+    }
+}
+
+.nav-bg-on-scroll {
+	background-color: rgba(0,0,0,0.5) !important;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+	color: #fff;
+}
+
+.active {
+	border-bottom: 1px solid #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+
+.navbar {
+	padding: 5px 50px;
+}
+
+.nav-item {
+	padding: 0 20px;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    top: 10px;
+    margin-top: 1px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+.navbar-light .navbar-toggler-icon {
+	font-size: 25px;
+    background-image: none;
+    color: #fff;
+}
+
+#contact-us {
+	height: 100vh;
+	width: 100%;
+	padding-top: 125px;
+
+	textarea {
+		min-height: 200px;
+	}
+}
+
+#about-us {
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	padding: 130px;
+
+	p {
+		margin-top: 14%;
+	}
+
+	.video-layer {
+		margin-top: 50px;
+		margin-bottom: -130px;	
+	}
+}
