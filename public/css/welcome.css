@@ -112,145 +112,213 @@
   margin-bottom: -130px;
 }
 
+#gallery {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 130px;
+}
+
+#artist {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 130px;
+  margin-bottom: 130px;
+}
+
 .img-container {
-    position: relative;
-    width: 80%;
-    overflow: hidden;
+  position: relative;
+  width: 80%;
+  overflow: hidden;
 }
+
 .image {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: all 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(45, 52, 54,.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: rgba(45, 52, 54, 0.3);
 }
-.img-container:hover .image{
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
+
+.img-container:hover .image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+
 .img-container:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
+
 #side-select-heart {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
+
 #side-select-share {
-    position: absolute;
-    top: 70px;
-    right: 15px;
+  position: absolute;
+  top: 70px;
+  right: 15px;
 }
+
 #footer-title {
-    position: absolute;
-    bottom: 40px;
-    left: 30px;
-    right: 30px;
-    color: #FFFFFF;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  right: 30px;
+  color: #FFFFFF;
 }
+
 #footer-content {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
-    color: #FFFFFF;
-    font-size: 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  color: #FFFFFF;
+  font-size: 15px;
 }
-#red{
-    color: rgba(214, 48, 49,1.0);
+
+#red {
+  color: #d63031;
 }
-.share-hover{
-    width: 100%;
-    color: rgba(236, 240, 241,1.0);
-    
+
+.share-hover {
+  width: 100%;
+  color: #ecf0f1;
 }
-.share-hover:hover{
-    color: rgba(9, 132, 227,1.0);
+
+.share-hover:hover {
+  color: #0984e3;
 }
+
 .pop-content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -110px;
-    right: 0;
-    opacity: 0;
-    transition: .5s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -110px;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
-#side-select-share:hover .pop-content{
-    opacity: 1;
+
+#side-select-share:hover .pop-content {
+  opacity: 1;
 }
-.heart-hover{
-    width: 100%;
-    color: rgba(236, 240, 241,1.0);
-    margin-bottom: 10px;
+
+.heart-hover {
+  width: 100%;
+  color: #ecf0f1;
+  margin-bottom: 10px;
 }
-.heart-hover:hover{
-    color: rgba(214, 48, 49,1.0);
+
+.heart-hover:hover {
+  color: #d63031;
 }
-.heart-popup{
-    display: none;
-    color: rgba(214, 48, 49,1.0);
-    font-size: 150px;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    animation:move 3s infinite ease-in-out;
+
+.heart-popup {
+  display: none;
+  color: #d63031;
+  font-size: 150px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  -webkit-animation: move 3s infinite ease-in-out;
+          animation: move 3s infinite ease-in-out;
 }
-@keyframes move{
-    0%{
-        transform: scale(1) rotate(0deg);
-    }
-    100%{
-        transform: scale(1) rotate(0.1deg);
-    }
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0.1deg);
+            transform: scale(1) rotate(0.1deg);
+  }
 }
-fieldset, label { }
-.rating { 
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
-    color: #FFFFFF;
-    font-size: 15px;
-    margin: 0; 
-    padding: 0;
-    display: inline-block;
+
+@keyframes move {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0.1deg);
+            transform: scale(1) rotate(0.1deg);
+  }
 }
-.rating > input { display: none; } 
-.rating > label:before { 
-    margin: 5px;
-    font-size: 15px;
-    font-family: FontAwesome;
-    display: inline-block;
-    content: "\f005";
+
+.rating {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  color: #FFFFFF;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
-.rating > .half:before { 
-    content: "\f089";
-    position: absolute;
+
+.rating > input {
+  display: none;
 }
-.rating > label { 
-    color: #ddd; 
-    float: right; 
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 15px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\F005";
 }
+
+.rating > .half:before {
+  content: "\F089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
 /***** CSS Magic to Highlight Stars on Hover *****/
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-.rating > input:checked + label:hover, /* hover current star when changing rating */
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+/* hover previous stars in list */
+
+.rating > input:checked + label:hover,
 .rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+

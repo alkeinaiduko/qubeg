@@ -44,7 +44,7 @@
                     <a class="nav-link scroll" href="#about-us">About Us</a>
                   </li>
                   <li class="nav-item cool-link">
-                    <a class="nav-link scroll" href="#">Blog</a>
+                    <a class="nav-link" href="{{route('all.blog')}}">Blog</a>
                   </li>
                   <li class="nav-item cool-link">
                     <a class="nav-link scroll" href="#contact-us">Contact</a>

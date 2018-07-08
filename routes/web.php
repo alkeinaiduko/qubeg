@@ -29,5 +29,7 @@ Route::prefix('admin')->group(function() {
 });
 
 
-// STORIES ROUTES
-Route::get('/my-stories', 'StoriesController@index')->name('admin.stories');
+// BLOG CONTROLLER
+Route::get('/blogs','BlogsController@index')->name('all.blog');
+
+Route::get('/show-blog', 'BlogsController@show')->name('show.blog');
