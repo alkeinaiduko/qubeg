@@ -97,7 +97,7 @@
         {{-- END OF SLIDER SECTION--}}
 
         {{-- ARTIST SECTION --}}
-        <section id="artists">
+        {{-- <section id="artists">
             <div class="row">
                 <div class="card col-md-2">
                     <img style="height: 200px; width: 100%; display: block;" src="{{asset('/images/artist1.jpg')}}" alt="artists">
@@ -127,7 +127,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         {{-- END OF GALLERY SECTION --}}
 
         {{-- GALLERY SECTION --}}

@@ -15,17 +15,33 @@
       <div class="row">
 
         <div class="col-sm-8 blog-main">
-        	<img class="blog-image" src="{{asset('/images/about-us.jpg')}}">
-          <div class="blog-post">
-          	
-            <h2 class="blog-post-title">Blog Title</h2>
-            <p class="blog-post-meta">July 8, 2018 by <a href="#">Mark</a></p>
+        	<div class="blog-main-container">
+	        	<div class="blog-image-container">
+		        	<img class="blog-image" src="{{asset('/images/about-us.jpg')}}">
+		        </div>
+				<div class="blog-post">	
+					<h2 class="blog-post-title">Blog Title</h2>
+					<p class="blog-post-meta">July 8, 2018 by <a href="#">Mark</a></p>
 
-            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-            <a href="{{route('show.blog')}}">Comments(3)</a>
-            <hr>
-          </div><!-- /.blog-post -->
+					<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+					<a href="{{route('show.blog')}}">Comments(3)</a>
+					<hr>
+				</div><!-- /.blog-post -->
+			</div> <!-- /.blog-main-container -->
 
+			<div class="blog-main-container">
+	        	<div class="blog-image-container">
+		        	<img class="blog-image" src="{{asset('/images/about-us.jpg')}}">
+		        </div>
+				<div class="blog-post">	
+					<h2 class="blog-post-title">Blog Title</h2>
+					<p class="blog-post-meta">July 8, 2018 by <a href="#">Mark</a></p>
+
+					<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+					<a href="{{route('show.blog')}}">Comments(3)</a>
+					<hr>
+				</div><!-- /.blog-post -->
+			</div> <!-- /.blog-main-container -->
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">

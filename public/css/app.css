@@ -10791,12 +10791,18 @@ body {
   clear: both;
 }
 
+.blog-main .blog-image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
 .blog-main .blog-post {
   padding-top: 10px;
 }
 
 .blog-main img.blog-image {
   width: 100%;
+  margin-top: -200px;
 }
 
 .blog-main img.commentor-image {

@@ -389,12 +389,18 @@ body {
 
 .blog-main {
 
+	.blog-image-container {
+		height: 200px;
+	    overflow: hidden;
+	}
+
 	.blog-post {
 		padding-top: 10px;
 	}
 
 	img.blog-image {
 		width: 100%;
+	    margin-top: -200px;
 	}
 
 	img.commentor-image {

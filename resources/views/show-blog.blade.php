@@ -10,7 +10,6 @@
         <div class="col-sm-8 blog-main">
         	<img class="blog-image" src="{{asset('/images/about-us.jpg')}}">
           <div class="blog-post">
-          	
             <h2 class="blog-post-title">Blog Title</h2>
             <p class="blog-post-meta">July 8, 2018 by <a href="#">Mark</a></p>
 
