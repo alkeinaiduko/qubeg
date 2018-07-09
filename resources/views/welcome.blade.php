@@ -14,7 +14,9 @@
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="{{asset('/css/welcome.css')}}">
+
     </head>
     <body>
         <div id="app">
@@ -33,10 +35,10 @@
                     <a class="nav-link scroll" href="#carouselExampleIndicators">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item cool-link">
-                    <a class="nav-link scroll" href="#">Artists</a>
+                    <a class="nav-link scroll" href="#artists">Artists</a>
                   </li>
                   <li class="nav-item cool-link">
-                    <a class="nav-link scroll" href="#">Gallery</a>
+                    <a class="nav-link scroll" href="#gallery">Gallery</a>
                   </li>
                   <li class="nav-item cool-link">
                     <a class="nav-link scroll" href="#about-us">About Us</a>
@@ -94,6 +96,181 @@
         </div>
         {{-- END OF SLIDER SECTION--}}
 
+        {{-- ARTIST SECTION --}}
+        <section id="artists">
+            <div class="row">
+                <div class="card col-md-2">
+                    <img style="height: 200px; width: 100%; display: block;" src="{{asset('/images/artist1.jpg')}}" alt="artists">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more ...</a>
+                    </div>
+                </div>
+                <div class="card col-md-2">
+                    <img style="height: 200px; width: 100%; display: block;" src="{{asset('/images/artist2.jpg')}}" alt="artists">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more ...</a>
+                    </div>
+                </div>
+                <div class="card col-md-2">
+                    <img style="height: 200px; width: 100%; display: block;" src="{{asset('/images/artist3.jpg')}}" alt="artists">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Read more ...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{-- END OF GALLERY SECTION --}}
+
+        {{-- GALLERY SECTION --}}
+        <section id="gallery">
+            <div class="row">
+                <div class="col-md-12 btn-group btn-group-toggle">
+                    <div class="img-container">
+                        <img src="{{asset('/images/post1.jpg')}}" alt="Avatar" class="image" id="actionMenu">
+                        <div class="text heart-popup" id="heart-1"><i class="fa fa-heart"></i></div>
+                        <div class="overlay">
+                            <div id="side-select-heart">
+                                <button type="button" class="btn btn-outline-secondary heart-hover" data-selected="false"><i class="fa fa-heart"></i></button>
+                            </div>
+                            <div id="side-select-share">
+                                <a class="btn btn-outline-secondary" class="share-hover" id="share-hover"><i class="fa fa-share-alt"></i></a>
+                                <div class="pop-content">
+                                    <button type="button" class="btn btn-outline-primary"><i class="fa fa-facebook-f"></i></button>
+                                    <button type="button" class="btn btn-outline-info"><i class="fa fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-outline-danger"><i class="fa fa-google-plus-g"></i></button>
+                                </div>
+                            </div>
+                            <div class="row" id="footer-title">Title : Sample</div>
+                            <div id="footer-content">
+                                <span class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"></label>
+                                </span>
+                                <span><i class="fa fa-heart" id="red"></i> 1,200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="{{asset('/images/post2.jpg')}}" alt="Avatar" class="image" id="actionMenu">
+                        <div class="text heart-popup" id="heart-2"><i class="fa fa-heart"></i></div>
+                        <div class="overlay">
+                            <div id="side-select-heart">
+                                <button type="button" class="btn btn-outline-secondary heart-hover" data-selected="false"><i class="fa fa-heart"></i></button>
+                            </div>
+                            <div id="side-select-share">
+                                <a class="btn btn-outline-secondary" class="share-hover" id="share-hover"><i class="fa fa-share-alt"></i></a>
+                                <div class="pop-content">
+                                    <button type="button" class="btn btn-outline-primary"><i class="fa fa-facebook-f"></i></button>
+                                    <button type="button" class="btn btn-outline-info"><i class="fa fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-outline-danger"><i class="fa fa-google-plus-g"></i></button>
+                                </div>
+                            </div>
+                            <div class="row" id="footer-title">Title : Sample</div>
+                            <div id="footer-content">
+                                <span class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"></label>
+                                </span>
+                                <span><i class="fa fa-heart" id="red"></i> 1,200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="{{asset('/images/post3.jpg')}}" alt="Avatar" class="image" id="actionMenu">
+                        <div class="text heart-popup" id="heart-3"><i class="fa fa-heart"></i></div>
+                        <div class="overlay">
+                            <div id="side-select-heart">
+                                <button type="button" class="btn btn-outline-secondary heart-hover" data-selected="false"><i class="fa fa-heart"></i></button>
+                            </div>
+                            <div id="side-select-share">
+                                <a class="btn btn-outline-secondary" class="share-hover" id="share-hover"><i class="fa fa-share-alt"></i></a>
+                                <div class="pop-content">
+                                    <button type="button" class="btn btn-outline-primary"><i class="fa fa-facebook-f"></i></button>
+                                    <button type="button" class="btn btn-outline-info"><i class="fa fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-outline-danger"><i class="fa fa-google-plus-g"></i></button>
+                                </div>
+                            </div>
+                            <div class="row" id="footer-title">Title : Sample</div>
+                            <div id="footer-content">
+                                <span class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"></label>
+                                </span>
+                                <span><i class="fa fa-heart" id="red"></i> 1,200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="{{asset('/images/post4.jpg')}}" alt="Avatar" class="image" id="actionMenu">
+                        <div class="text heart-popup" id="heart-4"><i class="fa fa-heart"></i></div>
+                        <div class="overlay">
+                            <div id="side-select-heart">
+                                <button type="button" class="btn btn-outline-secondary heart-hover" data-selected="true"><i class="fa fa-heart"></i></button>
+                            </div>
+                            <div id="side-select-share">
+                                <a class="btn btn-outline-secondary" class="share-hover" id="share-hover"><i class="fa fa-share-alt"></i></a>
+                                <div class="pop-content">
+                                    <button type="button" class="btn btn-outline-primary"><i class="fa fa-facebook-f"></i></button>
+                                    <button type="button" class="btn btn-outline-info"><i class="fa fa-twitter"></i></button>
+                                    <button type="button" class="btn btn-outline-danger"><i class="fa fa-google-plus-g"></i></button>
+                                </div>
+                            </div>
+                            <div class="row" id="footer-title">Title : Sample</div>
+                            <div id="footer-content">
+                                <span class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf"></label>
+                                </span>
+                                <span><i class="fa fa-heart" id="red"></i> 1,200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{-- END OF GALLERY SECTION --}}
+
         {{-- ABOUT US SECTION --}}
         <section id="about-us">
             <div class="row">
@@ -115,7 +292,7 @@
         {{-- CONTACT US SECTION --}}
         <section id="contact-us">
             <div class="container">
-                <form>
+                <form class="">
                     <fieldset>
                         <legend>Contact Us</legend>
                             <div class="row">
@@ -231,5 +408,21 @@
                 })
             });
         </script>
+        {{-- HEART POPUP --}}
+        <script type="text/javascript">
+            $("#ITEM5").click(function () {
+                if (item1 = "active") {
+                $("#item5").fadeIn(1500);
+                $("#item1").fadeOut(00);
+              }
+            });
+            $(".heart-hover").each(function(index) {
+                $(this).on("click",  function() {
+                  $("#heart-1").fadeIn(500);
+                  $("#heart-1").fadeOut(500);
+                });
+            });
+        </script>
+        {{-- END HEART POPUP --}}
     </body>
 </html>
