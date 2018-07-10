@@ -28,6 +28,11 @@ Route::prefix('admin')->group(function() {
 	Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 });
 
+// ADMIN BLOG CONTROLLER
+Route::get('/admin-blogs', 'AdminBlogsController@index')->name('admin.blogs')->middleware('auth:admin');
+Route::get('/write-a-blog', 'AdminBlogsController@create')->name('admin.write.blog');
+Route::post('/submit-blog', 'AdminBlogsController@store')->name('admin.submit.blog');
+
 
 // BLOG CONTROLLER
 Route::get('/blogs','BlogsController@index')->name('all.blog');

@@ -24,7 +24,7 @@
             </form>
             <div class="comment-section">
             	<div class="media">
-				  <img class="mr-3 commentor-image" src="{{asset('/images/user-avatar.png')}}" alt="Commentor Name">
+				  <img class="mr-3 commentor-image" src="{{asset('/images/user-avatar.jpg')}}" alt="Commentor Name">
 				  <div class="media-body">
 				    <h5 class="mt-0">Alkein Villajos<br><span class="comment-time">an hour ago</span></h5>
 
